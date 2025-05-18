@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/button_toggle_debug"
+        android:background="@android:drawable/ic_menu_info_details"
+        android:contentDescription="@string/toggle_debug"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:orientation="horizontal"
+        android:layout_marginTop="96dp">
+
+        <TextView
+            android:id="@+id/encoder_stat_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textStyle="bold"
+            android:textColor="#FF5722"
+            android:textSize="16sp"
+            android:layout_margin="8dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/video_recv_stat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textStyle="bold"
+            android:textColor="#FF8888"
+        android:textSize="16sp"
+        android:layout_margin="8dp"
+        android:layout_centerVertical="true"/>
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/hudview_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <TableRow>
+            <TextView
+                android:id="@+id/hud_stat_bwe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.2"
+                android:padding="2dip"
+                android:background="@android:color/white"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/hud_stat_connection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.4"
+                android:padding="2dip"
+                android:background="@android:color/white"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/hud_stat_video_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.4"
+                android:padding="2dip"
+                android:background="@android:color/white"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/hud_stat_video_recv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dip"
+                android:alpha="0.2"
+                android:background="@android:color/white"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

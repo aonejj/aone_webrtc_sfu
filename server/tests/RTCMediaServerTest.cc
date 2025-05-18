@@ -66,6 +66,7 @@ int main() {
 
     int port;
     read_or_create_listen_port("port.cfg", port);	
+	std::cout << "signaling server " << port << " listen..." << std::endl;
 
 	std::vector<RTCMediaServerController::RTCIceServerInfo> ice_servers;
 	RTCMediaServerController::RTCIceServerInfo ice_server;

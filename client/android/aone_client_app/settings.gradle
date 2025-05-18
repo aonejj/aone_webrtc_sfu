@@ -1,0 +1,2 @@
+include ':app', ':rtccore', ':sdp'
+rootProject.name = "aone_sfu_client"

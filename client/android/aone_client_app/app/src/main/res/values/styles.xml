@@ -1,0 +1,23 @@
+<resources>
+    <!-- 기존 테마 밑에 추가 -->
+    
+    <style name="RemoteVideoView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@android:color/black</item>
+        <item name="android:padding">4dp</item>
+    </style>
+
+    <style name="HudStatTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:layout_marginTop">2dp</item> <!-- 줄어든 top margin -->
+        <item name="android:padding">6dp</item>
+        <item name="android:background">@drawable/stat_text_bg</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>
