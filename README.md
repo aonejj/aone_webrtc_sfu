@@ -48,14 +48,6 @@
 
 ---
 
-## 🔐 License
-
-- This project is licensed under the [MIT License](LICENSE)
-- The customized `rtc_peerconnection` module is based on Google WebRTC, which is under a BSD-style license  
-  The modified source is not publicly released
-
----
-
 ## 📌 Notes
 
 - This repository is not a complete commercial-grade SFU server, but a **demo project for technical validation and concept sharing**
