@@ -12,7 +12,7 @@ target_link_directories(RTCMediaServerTest PRIVATE ../bin)
 
 target_link_libraries(RTCMediaServerTest
     rtc_media_server
-    rtc_sfu_peerconnection
+    rtc_peerconnection
     pthread
 )
 
